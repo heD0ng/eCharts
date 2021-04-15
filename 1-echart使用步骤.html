@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-echart使用步骤</title>
+    <style>
+        #box {
+            width: 600px;
+            height: 600px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+
+    </div>
+    <script src="js/echarts.min.js"></script>
+    <script>
+        // 初始化实例对象：echarts.init(dom容器)
+        var mychart = echarts.init(document.querySelector('#box'))
+        // 指定图表的配置项和数据
+        var option = {
+            // 标题
+            title: {
+                text: 'ECharts'
+            },
+            tooltip: {},
+            legend: {
+                data: ['销量']
+            },
+            xAxis: {
+                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+
+        // 使用配置项和数据给实例对象，显示数据。
+        mychart.setOption(option);
+
+//     option = {
+        // color:[]
+        // 线的颜色
+    // 图表标题
+    //     title: {
+    //         text: '折线图堆叠'
+    //     },
+    // 图表提示框：鼠标放上去的提示信息
+//     tooltip: {
+    // 触发方式：axis，item
+//         trigger: 'axis'
+//     },
+//      图例 
+//     legend: {
+//         data: ['邮件营销', '联盟广告', '视频广告', '直接访问', '搜索引擎']
+//     },
+//      表格：控制图表大小
+//     grid: {
+//         left: '3%',
+//         right: '4%',
+//         bottom: '3%',
+//          显示刻度
+//         containLabel: true
+//     },
+//      工具箱组件：另存为图片
+//     toolbox: {
+//         feature: {
+//             saveAsImage: {}
+//         }
+//     },
+//     xAxis: {
+    // category：类目--柱子、竖线 
+//         type: 'category',
+    // 线条与坐标轴之间有缝隙
+//         boundaryGap: false,
+//         data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+//     },
+//     yAxis: {
+//         type: 'value'
+//     },
+//     series: [
+//         {
+//             name: '邮件营销',
+//             type: 'line',
+                // stack：数据堆叠
+//             stack: '总量',
+//             data: [120, 132, 101, 134, 90, 230, 210]
+//         },
+//         {
+//             name: '联盟广告',
+//             type: 'line',
+//             stack: '总量',
+//             data: [220, 182, 191, 234, 290, 330, 310]
+//         },
+//         {
+//             name: '视频广告',
+//             type: 'line',
+//             stack: '总量',
+//             data: [150, 232, 201, 154, 190, 330, 410]
+//         },
+//         {
+//             name: '直接访问',
+//             type: 'line',
+//             stack: '总量',
+//             data: [320, 332, 301, 334, 390, 330, 320]
+//         },
+//         {
+//             name: '搜索引擎',
+//             type: 'line',
+//             stack: '总量',
+//             data: [820, 932, 901, 934, 1290, 1330, 1320]
+//         }
+//     ]
+// };
+    </script>
+</body>
+
+</html>
