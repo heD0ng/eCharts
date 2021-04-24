@@ -10,5 +10,5 @@
 
 4、时钟：可以采用动画或者定时器进行设置
 
-![1619245784982](C:\Users\HIT\AppData\Roaming\Typora\typora-user-images\1619245784982.png)
+ ![image](http://github.com/heD0ng/eCharts/raw/master/imgs/eCharts.png) 
 
